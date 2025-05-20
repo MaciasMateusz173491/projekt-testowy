@@ -2,13 +2,23 @@
 
 // import org.junit.jupiter.api.Test;
 
-public class Main {
-  public static void main(String[] args) {
-    System.out.println("Hello world!");
-  }
+//
+import java.util.Scanner;
 
-  // @Test
-  // void addition() {
-  //     assertEquals(2, 1 + 1);
-  // }
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int count = 0;
+
+        while (count < 20) {
+            System.out.println("Naciśnij Enter, aby kontynuować...");
+            scanner.nextLine(); // Czekaj na naciśnięcie Enter
+            count++;
+            System.out.println(count);
+        }
+
+        System.out.println("Koniec liczenia.");
+        scanner.close();
+    }
 }
